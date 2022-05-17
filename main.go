@@ -7,7 +7,7 @@ func main() {
 	fmt.Printf("Enter your name: ")
 	var name string
 	fmt.Scan(&name)
-	fmt.Printf("Hello, %v, welcome to my game!", name)
+	fmt.Printf("Hello, %v, welcome to my game!\n", name)
 	fmt.Printf("Enter your age: \n")
 	var age int
 	fmt.Scan(&age)
@@ -32,6 +32,7 @@ func main() {
 		score += 1
 	} else if answer+" "+answer2 == "rtx 3090" {
 		fmt.Println("Correct")
+		score += 1
 	} else {
 		fmt.Println("Incorrect")
 	}
